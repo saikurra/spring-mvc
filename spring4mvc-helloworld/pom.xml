@@ -26,6 +26,7 @@
 			<artifactId>jstl</artifactId>
 			<version>${jstl-version}</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
@@ -54,22 +55,6 @@
 					<downloadJavadocs>true</downloadJavadocs>
 					<wtpversion>2.0</wtpversion>
 					<wtpContextName>${project.artifactId}</wtpContextName>
-				</configuration>
-			</plugin>
-
-			<plugin>
-				<groupId>org.apache.tomcat.maven</groupId>
-				<artifactId>tomcat7-maven-plugin</artifactId>
-				<version>2.2</version>
-			</plugin>
-			<plugin>
-				<groupId>org.eclipse.jetty</groupId>
-				<artifactId>jetty-maven-plugin</artifactId>
-				<version>9.0.6.v20130930</version>
-				<configuration>
-					<webApp>
-						<contextPath>/${project.artifactId}</contextPath>
-					</webApp>
 				</configuration>
 			</plugin>
 		</plugins>

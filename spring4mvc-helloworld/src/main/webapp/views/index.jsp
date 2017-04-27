@@ -14,6 +14,6 @@
 		@Controller HomeController --> @RequestMapping("/") home().</p>
 	<p>The home() returned index. The view resolver in
 		mvc-config added prefix /views and suffix .jsp and looked for
-		/views/index.jsp. It found index.jsp and then sent it to browser.
+		/views/index.jsp. It found index.jsp and then sent it to browser.</p>
 </body>
 </html>
