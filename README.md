@@ -3,9 +3,8 @@ This repository will have working demo examples of how to use different spring-m
 
 ## Software Required
 - JDK 1.7 or above
-- Spring Tool Suite - (Preffered) or any Eclipse Based IDE
+- Any Eclipse Based IDE ( Spring Tool Suite - STS preffered)
 - Maven 3.2 or above -(Usually its embedded into Eclipse for EE Dev or Spring Tool Suite)
-
 
 ## Technologies/Frameworks Used
 - Spring MVC
