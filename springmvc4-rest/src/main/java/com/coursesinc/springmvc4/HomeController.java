@@ -23,16 +23,16 @@ public class HomeController {
 	
 	@RequestMapping(value = "/object", method = RequestMethod.GET)
 	public @ResponseBody User demoObject() {
-		return new User("1", "Sai", "2102418457");
+		return new User(1, "Sai", "2102418457");
 	}
 	
 	@RequestMapping(value = "/object-list", method = RequestMethod.GET)
 	public @ResponseBody List<User> demoObjectList() {
 		List<User> userList = new ArrayList<User>();
-		userList.add(new User("1", "Sai", "2102418457"));
-		userList.add(new User("1", "Sai", "2102418457"));
-		userList.add(new User("1", "Sai", "2102418457"));
-		userList.add(new User("1", "Sai", "2102418457"));
+		userList.add(new User(1, "Sai", "2102418457"));
+		userList.add(new User(1, "Sai", "2102418457"));
+		userList.add(new User(1, "Sai", "2102418457"));
+		userList.add(new User(1, "Sai", "2102418457"));
 
 		return userList;
 	}

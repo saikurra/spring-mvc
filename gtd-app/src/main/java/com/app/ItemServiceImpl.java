@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.ModelAttribute;
 
 @Service
 public class ItemServiceImpl {
@@ -43,6 +44,10 @@ public class ItemServiceImpl {
 			if(item.getId() == currentItem.getId()){
 				currentItem.setNotes(item.getNotes());
 				currentItem.setTodo(item.getTodo());
+				currentItem.setType(item.getType());
+				currentItem.setEnergy(item.getEnergy());
+				currentItem.setTime(item.getTime());
+				currentItem.setDueDate(item.getDueDate());
 				return currentItem;
 			}
 		}

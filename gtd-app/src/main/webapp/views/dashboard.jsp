@@ -7,7 +7,7 @@
 	<c:set var="contextPath" value="${pageContext.request.contextPath}" />
 
 	<div>
-		<a href="${contextPath}/new-item">New Item</a>
+		<a href="${actionUrl}">New Item</a>
 	</div>
 	<div>
 		<table>
@@ -17,8 +17,9 @@
 			<tbody>
 				<c:forEach items="${items}" var="item">
 					<tr>
-						<td><a href="${contextPath}/${item.id}/edit-item">${item.todo}</a></td>
+						<td><a href="${contextPath}/items/${item.id}/edit">${item.todo}</a></td>
 						<td>${item.notes}</td>
+						<td>${item.type}</td>
 					</tr>
 				</c:forEach>
 			</tbody>

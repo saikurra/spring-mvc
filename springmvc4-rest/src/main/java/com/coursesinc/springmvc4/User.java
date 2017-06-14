@@ -3,23 +3,24 @@ package com.coursesinc.springmvc4;
 import java.io.Serializable;
 
 public class User implements Serializable{
-	private String id;
+	
+	private int id;
 	private String name;
 	private String phone;
 	
 	public User(){}
-	public User(String id, String name, String phone) {
+	public User(int id, String name, String phone) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.phone = phone;
 	}
 
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
